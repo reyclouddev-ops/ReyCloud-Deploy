@@ -239,7 +239,7 @@ Support:
 
 Contoh:
 
-https://reyshop.legionteknologi.my.id
+https://reycloud-deploy.legionteknologi.my.id
 
 ---
 
