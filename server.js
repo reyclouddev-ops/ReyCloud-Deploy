@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const VERCEL_API = "https://api.vercel.com";
 
-const token = String(process.env.VERCEL_TOKEN || "").trim();
+const token = String(process.env.TOKEN_VERCEL || "").trim();
 const domain = String(global.domain || "").trim();
 
 const upload = multer({
