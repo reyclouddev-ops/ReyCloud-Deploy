@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <title>ReyCloud Deploy</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="background">
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+</div>
+
+<main class="container">
+
+  <section class="card">
+
+    <div class="brand-icon">
+      🚀
+    </div>
+
+    <div class="badge">
+      <span></span>
+      REYCLOUD DEPLOY
+    </div>
+
+    <h1>
+      ReyCloud Deploy<span>🚀</span>
+    </h1>
+
+    <p class="description">
+      Deploy website kamu dengan cepat dan mudah.
+    </p>
+
+    <form id="deployForm">
+
+      <div class="field">
+
+        <label for="subdomain">
+          Nama Project
+        </label>
+
+        <div class="domain-input">
+
+          <input
+            id="subdomain"
+            name="subdomain"
+            type="text"
+            placeholder="reyshop"
+            autocomplete="off"
+            maxlength="63"
+            required
+          >
+
+          <span>
+            .legionteknologi.my.id
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="field">
+
+        <label>
+          Project Website
+        </label>
+
+        <label
+          class="upload"
+          for="project"
+        >
+
+          <input
+            id="project"
+            name="project"
+            type="file"
+            accept=".zip,.html,.htm"
+            required
+          >
+
+          <div class="upload-icon">
+            📦
+          </div>
+
+          <div class="upload-content">
+
+            <strong id="fileText">
+              Pilih project
+            </strong>
+
+            <small>
+              ZIP, HTML atau HTM
+            </small>
+
+          </div>
+
+          <div class="upload-arrow">
+            →
+          </div>
+
+        </label>
+
+      </div>
+
+      <button
+        type="submit"
+        id="deployButton"
+      >
+        🚀 Deploy Sekarang
+      </button>
+
+    </form>
+
+    <section
+      class="progress"
+      id="progressBox"
+    >
+
+      <div class="progress-head">
+
+        <strong id="progressText">
+          Menyiapkan deployment...
+        </strong>
+
+        <span id="progressPercent">
+          0%
+        </span>
+
+      </div>
+
+      <div class="progress-track">
+        <div id="progressFill"></div>
+      </div>
+
+      <div class="steps">
+
+        <div class="step" id="step1">
+
+          <div class="step-number">
+            1
+          </div>
+
+          <div class="step-info">
+
+            <strong>
+              📦 Memuat file
+            </strong>
+
+            <small>
+              Menyiapkan project
+            </small>
+
+          </div>
+
+        </div>
+
+        <div class="step" id="step2">
+
+          <div class="step-number">
+            2
+          </div>
+
+          <div class="step-info">
+
+            <strong>
+              ☁️ Meminta request API Vercel
+            </strong>
+
+            <small>
+              Menghubungkan ke Vercel
+            </small>
+
+          </div>
+
+        </div>
+
+        <div class="step" id="step3">
+
+          <div class="step-number">
+            3
+          </div>
+
+          <div class="step-info">
+
+            <strong>
+              📤 Data berhasil di-upload
+            </strong>
+
+            <small>
+              File berhasil dikirim
+            </small>
+
+          </div>
+
+        </div>
+
+        <div class="step" id="step4">
+
+          <div class="step-number">
+            4
+          </div>
+
+          <div class="step-info">
+
+            <strong>
+              🚀 Menuju tahap akhir
+            </strong>
+
+            <small>
+              Menunggu deployment selesai
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div id="result"></div>
+
+    <footer>
+      Powered by <strong>ReyCloudShop</strong>
+    </footer>
+
+  </section>
+
+</main>
+
+<script src="/script.js"></script>
+
+</body>
+</html>
